@@ -17,3 +17,11 @@
 	* replace entryPoint with the main .js file containing all imports
 	* replace output with the new file to create with the result
 	* example: npx webpack src/index.js dist/bundle.js
+* Package.json
+	* Add build script to allow NPM to run the webpack build command.
+		* NPM Build Script:
+		```
+		"scripts": {
+			"build": "webpack"
+		},
+		```

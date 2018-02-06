@@ -25,3 +25,9 @@
 			"build": "webpack"
 		},
 		```
+
+# PART 5. Asset Management
+* Loaders
+	* CSS
+		* The test property identifies which file or files should be transformed.
+		* The use property indicates which loader should be used to do the transforming. 

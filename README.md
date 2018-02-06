@@ -28,6 +28,11 @@
 
 # PART 5. Asset Management
 * Loaders
-	* CSS
-		* The test property identifies which file or files should be transformed.
-		* The use property indicates which loader should be used to do the transforming. 
+	* 'test:' The test property identifies which file or files should be transformed.
+	* 'use:' The use property indicates which loader should be used to do the transforming.
+
+	* CSS (download test image prior to running these steps)
+		* RUN: npm install --save-dev file-loader
+		* Update webpack config file to include/use the file-load module.
+		* Update the index.js to insert the newly added image.
+	* 

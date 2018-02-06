@@ -7,6 +7,12 @@ function component() {
 	var element = document.createElement('div'); //If div was changed to body, icon.png, would be the background for the entire html document.
 
 	// Lodash, now imported by this script
+	/* HERE IS WHAT LODASH DOES!!!!!!!!
+	var words = [Hello, webpack];
+	var displayWords = words.join(' ');
+	element.innerHTML = displayWords;
+	*/
+
 	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 	element.classList.add('hello');
 

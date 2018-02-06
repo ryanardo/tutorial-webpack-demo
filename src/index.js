@@ -1,3 +1,6 @@
+/*
+The import statements below import ALL of the external code neccessary to make the corresponding HTML file(s) run properly.
+*/
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';

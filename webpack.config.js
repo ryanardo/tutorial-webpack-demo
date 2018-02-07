@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //Will create a new index.html file with updated dependencies.
+const CleanWebpackPlugin = require('clean-webpack-plugin'); //Will clean the 'dist' folder on each new build command.
 
 module.exports = {
 	entry: {
@@ -7,6 +8,7 @@ module.exports = {
 		print: './src/print.js'
 	},
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'Output Management'
 		})

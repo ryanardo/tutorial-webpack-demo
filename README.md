@@ -42,3 +42,6 @@
 
 # PART 6. Output Management
 * Add multiple entry points, and outputs corresponding exits (EXPLAIN WITH GREATER DETAIL IN FINAL DRAFT).
+
+# PART 7. Development
+* Add line 'devtool: 'inline-source-map',' to the webpack config file to have JavaScript monitor your source files and bugs after they have been bundled into a single file.

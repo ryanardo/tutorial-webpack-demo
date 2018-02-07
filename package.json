@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "webpack-dev-server --open --config webpack.dev.js",
 		"build": "webpack --config webpack.prod.js",
-		"test": "mocha-webpack --webpack-config webpack.dev.js \"test/**/*test.js\""
+		"test": "mocha-webpack --webpack-config webpack.mocha.js \"test/**/*test.js\""
 	},
 	"keywords": [],
 	"author": "",

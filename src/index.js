@@ -1,7 +1,7 @@
 /*
 The import statements below import ALL of the external code neccessary to make the corresponding HTML file(s) run properly.
 */
-import { cube } from './math.js';
+import { Cube } from './math.js';
 
 function component() {
 	/* This line creates the html div element that webpack gets to control. */

@@ -1,7 +1,7 @@
-export function square(x) {
+export const Square = function (x) {
 	return x * x;
 }
 
-export function cube(x) {
+export const Cube = function (x) {
 	return x * x * x;
 }

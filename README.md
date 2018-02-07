@@ -45,3 +45,32 @@
 
 # PART 7. Development
 * Add line 'devtool: 'inline-source-map',' to the webpack config file to have JavaScript monitor your source files and bugs after they have been bundled into a single file.
+
+# PART 8. Production
+* Split webpack config files into x3 config files (common, development, production)
+	* Common:
+		* Contains all plugins, devtools, packages, etc. that are necessary in every environment of your project.
+	* Development:
+		* Contains all plugins, devtools, packages, etc. that are necessary in the Development environment of your project.
+		* in this case: settings for the development server
+	* Production:
+		* Contains all plugins, devtools, packages, etc. that are necessary in the Production environment of your project.
+		* in this case: plugin for minifying code, deleting unused code
+
+# PART 9. Testing with Mocha
+* npm install mocha mocha-webpack --save-dev
+	* install mocha itself and its webpack wrapper to node_modules, save both to the dev side
+* npm install webpack-node-externals --save-dev
+	* performance increase to mocha; allows mocha to only load the plugins required for the test
+* create a config file for mocha.
+	* most examples say webpack.config-test.js, this repo calls it webpack.mocha.js
+	* this will contain configuration specifically for mocha (in this case, calling node externals)
+* create script in package.json to run tests
+	* ``` "test": "mocha-webpack --webpack-config webpack.mocha.js \"test/**/*test.js\"" ```
+	* breakdown:
+	* ```"script name": "[call mocha] --webpack-config(point to a config file for mocha) [mocha config file you made] \"file or file pattern to test\"```
+* create tests
+	* import the files to test from. Use es6 terminology for export functions, as used here.
+	* assert is built into node
+	* outer describe statement should point to the filename
+	* inner describe points to individual functions

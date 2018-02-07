@@ -1,4 +1,4 @@
-## For Wed, 2/7/18 [START:](https://webpack.js.org/guides/output-management/#setting-up-htmlwebpackplugin)
+## For Wed, 2/7/18
 ## *_NOTE_*
 * ESC6/ES2015: Note that webpack will not alter any code other than import and export statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel or Bublé via webpack's loader system.
 
@@ -42,3 +42,6 @@
 
 # PART 6. Output Management
 * Add multiple entry points, and outputs corresponding exits (EXPLAIN WITH GREATER DETAIL IN FINAL DRAFT).
+
+# PART 7. Development
+* Add line 'devtool: 'inline-source-map',' to the webpack config file to have JavaScript monitor your source files and bugs after they have been bundled into a single file.

@@ -1,20 +1,17 @@
 /*
 The import statements below import ALL of the external code neccessary to make the corresponding HTML file(s) run properly.
 */
-import _ from 'lodash';
-import printMe from './print.js';
+import { cube } from './math.js';
 
 function component() {
 	/* This line creates the html div element that webpack gets to control. */
-	var element = document.createElement('div'); //If div was changed to body, icon.png, would be the
-	var btn = document.createElement('button');
+	var element = document.createElement('pre');
 
-	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+	element.innerHTML = [
+	  'Hello webpack!',
+	  '5 cubed is equal to ' + cube(5)
+	].join('\n\n');
 
-	btn.innerHTML = 'Click me and check the console!';
-	btn.onclick = printMe;
-
-	element.appendChild(btn);
 
 	return element;
 }

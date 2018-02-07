@@ -5,7 +5,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //Will clean the 'di
 module.exports = {
 	entry: {
 		app: './src/index.js',
-		print: './src/print.js'
 	},
 	devtool: 'inline-source-map', //Source mapp tool included with JavaScript.
 	devServer: {

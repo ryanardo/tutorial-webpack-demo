@@ -16,7 +16,6 @@ function component() {
 	  '5 cubed is equal to ' + cube(5)
 	].join('\n\n');
 
-
 	return element;
 }
 

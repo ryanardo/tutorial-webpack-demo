@@ -8,10 +8,13 @@ module.exports = {
 		print: './src/print.js'
 	},
 	devtool: 'inline-source-map', //Source mapp tool included with JavaScript.
+	devServer: {
+		contentBase: './dist'
+	},
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
-			title: 'Output Management'
+			title: 'Fart Management'
 		})
 	],
 	output: {

@@ -1,3 +1,6 @@
+## *_NOTE_*
+* ESC6/ES2015: Note that webpack will not alter any code other than import and export statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel or Bublé via webpack's loader system.
+
 # PART 1. NPM Commands to Run
 * npm init -y
 	* initializes NPM Packages in the project.
@@ -34,5 +37,7 @@
 	* CSS (download test image prior to running these steps)
 		* RUN: npm install --save-dev file-loader
 		* Update webpack config file to include/use the file-load module.
-		* Update the index.js to insert the newly added image.
-	* 
+		* Update the index.js to import the image into the JavaScript, and then insert the newly added image into the index.html file.
+
+# PART 6. Output Management
+* Add multiple entry points, and outputs corresponding exits (EXPLAIN WITH GREATER DETAIL IN FINAL DRAFT).

@@ -1,5 +1,5 @@
 import { square, cube } from "../src/math.js";
-var assert = require('assert');
+const assert = require('assert');
 
 
 describe('math', function () {

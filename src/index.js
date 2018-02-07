@@ -9,7 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 function component() {
 	/* This line creates the html div element that webpack gets to control. */
-	var element = document.createElement('pre');
+	let element = document.createElement('pre');
 
 	element.innerHTML = [
 	  'Hello webpack!',

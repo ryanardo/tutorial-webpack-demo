@@ -7,6 +7,7 @@ module.exports = {
 		app: './src/index.js',
 		print: './src/print.js'
 	},
+	devtool: 'inline-source-map', //Source mapp tool included with JavaScript.
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({

@@ -1,6 +1,7 @@
 ## For Wed, 2/7/18
 ## *_NOTE_*
 * ESC6/ES2015: Note that webpack will not alter any code other than import and export statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel or Bublé via webpack's loader system.
+* webpack will handle all dependencies that used to be in your HTML documents.
 
 # PART 1. NPM Commands to Run
 * npm init -y
@@ -9,7 +10,7 @@
 	* installs the webpack module into the project directory.
 
 # PART 2. Import dependencies using NPM
-* use 'npm install' statements to install npm package dependencies into your project directory.
+* use 'npm install' statements to install npm package dependencies for your code into your project directory.
 
 # PART 3. HTML 'script' tags consolidation
 * Create a JS file to hold all your webpack dependencies.
